@@ -1,5 +1,5 @@
 
-## Google spreadsheet as a data source for Python.
+## Google spreadsheet as a data source.
 
 Retrieves data from the first sheet of the Google Spreadsheet uniquely identified by the spreadsheet <i>key</i> -- a string -- the long sequence of characters visible in the address bar when editing the spreadsheet in a browser.
 
