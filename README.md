@@ -7,6 +7,10 @@ Read data in a Google Spreadsheet.
 
 Uses Google's <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Query Language</a> to retrieve the data.
 
+D3:
+
+<a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (preferred approach).  I created a <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> that uses JSONP to access data via non-CORS services, but it's more difficult and JSONP brings related security concerns.
+
 Python (3.4):
 ```
 $ python app.py
@@ -16,7 +20,3 @@ Node.js:
 ```
 $ node app.js
 ```
-
-D3:
-
-<a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (preferred approach).  I created a <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> that uses JSONP to access data via non-CORS services, but it's more difficult and JSONP brings related security concerns.
