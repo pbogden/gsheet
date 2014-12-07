@@ -9,11 +9,11 @@ Uses Google's <a href="https://developers.google.com/chart/interactive/docs/quer
 
 D3 (w/CORS):
 
-<a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (preferred approach).  
+* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (preferred approach).  
 
 D3 (w/JSONP):
 
-A <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> uses JSONP to access data via non-CORS services. But it's more difficult and JSONP brings related security concerns.
+* A <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> uses JSONP to access data via non-CORS services. But it's more difficult and JSONP brings related security concerns.
 
 Python (3.4):
 ```
