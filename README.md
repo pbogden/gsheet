@@ -9,11 +9,13 @@ Uses Google's <a href="https://developers.google.com/chart/interactive/docs/quer
 
 Python (3.4):
 ```
-python try.py
+$ python app.py
 ```
 
-Nodejs:
+Node.js:
 ```
-node try
+$ node app.js
 ```
 
+D3:
+<a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a>servers.  I created a <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> that uses JSONP to access data via non-CORS services, but it's more difficult and brings related security concerns.
