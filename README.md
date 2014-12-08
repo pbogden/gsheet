@@ -1,21 +1,26 @@
 
 ## Google spreadsheet as a data source
 
-Read data in a Google Spreadsheet. 
-* You need the spreadsheet <i>key</i>, i.e., the long sequence of characters visible in the address bar when you edit the spreadsheet in a browser.  
-* The spreadsheet must be shared so that "Anyone with the link can view" the document.
+These demos retrieve data as CSV from the Google spreadsheet at this URL:
 
-Uses Google's <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Query Language</a> to retrieve the data.
+https://docs.google.com/spreadsheets/d/1Cj1SSI-GHCRhIAK-LYurwVrE0FOyOJTpUnoHNNPieYo/edit#gid=0
 
-*D3 (w/CORS):*
+To adapt a demo to another spreadsheet:
 
-* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This example</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (preferred approach).  
+ *   You must share the spreadsheet so that "Anyone with the link can view" it.
+ *   You need a unique spreadsheet *key* (the long string ```1Cj1...ieYo``` in the URL above). You can get it from the "shareable link", or from the address bar when you edit the spreadsheet in a browser.
 
-*D3 (w/JSONP):*
+Modify the demos with Google's <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Query Language</a>.
 
-* A <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">D3 plugin</a> uses JSONP to access data via non-CORS services. But it's more difficult and JSONP brings related security concerns.
+*D3 (CORS):*
 
-*Python (3.4):*
+* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This demo</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (the preferred and simpler approach).  
+
+*D3 (JSONP):*
+
+* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP to access data for non-CORS-enabled services. But JSONP has security issues.
+
+*Python (3):*
 ```
 $ python app.py
 ```
