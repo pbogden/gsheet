@@ -8,7 +8,7 @@ https://docs.google.com/spreadsheets/d/1Cj1SSI-GHCRhIAK-LYurwVrE0FOyOJTpUnoHNNPi
 To adapt a demo to another spreadsheet:
 
  *   You must share the spreadsheet so that "Anyone with the link can view" it.
- *   You need a unique spreadsheet *key* (the long string ```1Cj1...ieYo``` in the URL above). You can get it from the "shareable link", or from the address bar when you edit the spreadsheet in a browser.
+ *   You need a unique spreadsheet *key* (the long string ```1Cj1...ieYo``` in the URL above). You can get it from the "shareable link" when you share a spreadsheet, or from the address bar when you edit the spreadsheet in a browser.
 
 Modify the demos with Google's <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Query Language</a>.
 
