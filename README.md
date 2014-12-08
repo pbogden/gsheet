@@ -18,7 +18,7 @@ Modify the demos with Google's <a href="https://developers.google.com/chart/inte
 
 *D3 (JSONP):*
 
-* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP to access data for non-CORS-enabled services. But JSONP has security issues.
+* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP to access data for non-CORS-enabled services. But JSONP has security issues, so this approach is not recommended.
 
 *Python (3):*
 ```
