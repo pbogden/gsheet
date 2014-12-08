@@ -1,9 +1,7 @@
 
 ## Google spreadsheet as a data source
 
-These demos retrieve data as CSV from the Google spreadsheet at this URL:
-
-https://docs.google.com/spreadsheets/d/1Cj1SSI-GHCRhIAK-LYurwVrE0FOyOJTpUnoHNNPieYo/edit#gid=0
+These demos retrieve data as CSV from a <a href="https://docs.google.com/spreadsheets/d/1Cj1SSI-GHCRhIAK-LYurwVrE0FOyOJTpUnoHNNPieYo/edit#gid=0">Google spreadsheet</a>.
 
 To adapt a demo to another spreadsheet:
 
@@ -14,11 +12,11 @@ Modify the demos with Google's <a href="https://developers.google.com/chart/inte
 
 *D3 (CORS):*
 
-* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This demo</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers (the preferred and simpler approach).  
+* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This demo</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers. Although this is the preferred and simpler approach, it doesn't work in Safari (for reasons I don't understand).
 
 *D3 (JSONP):*
 
-* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP to access data for non-CORS-enabled services. But JSONP has security issues, so this approach is not recommended.
+* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP to access data for non-CORS-enabled services. But JSONP has security issues, so beware. 
 
 *Python (3):*
 ```
