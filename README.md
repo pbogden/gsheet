@@ -12,11 +12,11 @@ Modify the demos with Google's <a href="https://developers.google.com/chart/inte
 
 *D3 (CORS):*
 
-* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This demo</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> servers. Although this should be the preferred and simpler approach, it doesn't work in Safari (for reasons I don't understand).
+* <a href="http://bl.ocks.org/pbogden/d46d6dbfcd6f35a3ccda">This demo</a> uses Google's <a href="http://enable-cors.org">CORS-enabled</a> services. Although this should be the preferred and simpler approach, it doesn't work in Safari (for reasons I don't understand).
 
 *D3 (JSONP):*
 
-* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP. It works in all the browsers I've tested, and it can access spreadsheet data for non-CORS-enabled services. But JSONP has security issues, so beware. 
+* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP. It works in all the browsers I've tested, and it can the use Google services that are not CORS enabled. But JSONP has <a href="http://en.wikipedia.org/wiki/JSONP#Security_concerns">security issues</a>, so beware. 
 
 *Python (3):*
 ```
