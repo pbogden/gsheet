@@ -10,9 +10,9 @@ d3.gsheet = function (key, sheetName, callback) {
     function parse(response) {
         var cols = response.table.cols,
             rows = response.table.rows,
-            data = rows.map(function(row, i) {
-                o = {};
-                row.c.forEach(function(c, j) { o[cols[j].label] = c.v });
+            data = rows.map(function(row) {
+                var o = {};
+                row.c.forEach(function(c, j) { o[cols[j].label] = c.v; });
                 return o;
             });
         return data;
@@ -39,5 +39,5 @@ d3.gsheet = function (key, sheetName, callback) {
     script = d3.select('head')
         .append('script')
         .attr('type', 'text/javascript')
-        .attr('src', url)
+        .attr('src', url);
 }
