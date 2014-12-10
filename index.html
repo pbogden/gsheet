@@ -1,1 +1,39 @@
-gsheet site
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>d3 gsheet (JSONP)</title>
+<link rel="stylesheet" href="table.css" type="text/css">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://pbogden.github.io/gsheet/gsheet.js"></script>
+<body>
+<form>
+  <label><input type="radio" name="mode" value="Sheet1">Sheet1</label>
+  <label><input type="radio" name="mode" value="Sheet2">Sheet2</label>
+</form>
+<script>
+
+var key = "1Cj1SSI-GHCRhIAK-LYurwVrE0FOyOJTpUnoHNNPieYo"; // demo.gsheet
+
+var table = d3.select('body').append('table');
+
+d3.selectAll('input').on("change", change);
+d3.select("input[value=\"Sheet1\"]").property("checked", true).each(change);
+var timeout = setTimeout(function() {
+  d3.select("input[value=\"Sheet2\"]").property("checked", true).each(change);
+}, 3000);
+
+function change() {
+  var sheet = this.value;
+  d3.gsheet(key, sheet, function(data) { 
+      table.selectAll("tr").remove()
+      table.selectAll("tr")
+          .data(d3.csv.parseRows(d3.csv.format(data)))
+        .enter()
+          .append('tr').selectAll('td')
+          .data(function(d) { return d; })
+        .enter()
+          .append('td')
+          .html(function(d) { return d; })
+  });
+}
+
+</script>
