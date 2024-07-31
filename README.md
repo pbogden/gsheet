@@ -2,8 +2,7 @@
 
 This repo is 10 years old -- yikes, seems like only yesterday! 
 
-Check out this [Observable](https://observablehq.com/) template instead...
-
+For a modern approach, check out this [Observable](https://observablehq.com/) template instead:
 [Google Sheets Starter](https://observablehq.com/@observablehq/google-sheets-starter)
 
 ## Google spreadsheet as a data source
