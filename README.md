@@ -1,3 +1,10 @@
+## 2024 update
+
+This repo is 10 years old -- yikes, seems like only yesterday! 
+
+Check out this [Observable](https://observablehq.com/) template instead...
+
+[Google Sheets Starter](https://observablehq.com/@observablehq/google-sheets-starter)
 
 ## Google spreadsheet as a data source
 
@@ -16,7 +23,7 @@ Modify the demos with Google's <a href="https://developers.google.com/chart/inte
 
 *D3 (JSONP):*
 
-* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP. It works in all the browsers I've tested, and it can use non-CORS-enabled Google services. But JSONP has <a href="http://en.wikipedia.org/wiki/JSONP#Security_concerns">security issues</a>, so beware. 
+* <a href="http://bl.ocks.org/pbogden/62244b94a1da2db963db">This demo</a> implements a D3 plugin that uses JSONP. It can use non-CORS-enabled Google services. But JSONP has <a href="http://en.wikipedia.org/wiki/JSONP#Security_concerns">security issues</a>, so beware. 
 
 *Python (3):*
 ```
